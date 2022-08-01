@@ -1,0 +1,565 @@
+$size:10px;
+$light-color:rgb(75,73,81);
+$wick-color:rgb(130,129,136);
+$line-color:rgb(12,12,12);
+$bottom-color:rgb(153,152,157);
+$active-bottom-color:rgb(185,182,193);
+$active-light-color:rgb(241,218,126);
+$active-wick-color:rgb(255,236,201);
+
+$light-bg:
+    -1*$size 1*$size 0 $light-color,
+    1*$size 1*$size 0 $light-color,
+    0 2*$size 0 $light-color,
+    0 3*$size 0 $light-color,
+    0 4*$size 0 $light-color,
+    0 5*$size 0 $light-color,
+    0 6*$size 0 $light-color,
+    0 7*$size 0 $light-color,
+    -2*$size 0*$size 0 $light-color,
+    -2*$size 2*$size 0 $light-color,
+    -2*$size 3*$size 0 $light-color,
+    -2*$size 4*$size 0 $light-color,
+    -2*$size 5*$size 0 $light-color,
+    -2*$size 6*$size 0 $light-color,
+    -2*$size 7*$size 0 $light-color,
+    2*$size 0*$size 0 $light-color,
+    2*$size 2*$size 0 $light-color,
+    2*$size 3*$size 0 $light-color,
+    2*$size 4*$size 0 $light-color,
+    2*$size 5*$size 0 $light-color,
+    2*$size 6*$size 0 $light-color,
+    2*$size 7*$size 0 $light-color,
+    -2*$size -6*$size 0 $light-color,
+    -1*$size -6*$size 0 $light-color,
+    0*$size -6*$size 0 $light-color,
+    1*$size -6*$size 0 $light-color,
+    2*$size -6*$size 0 $light-color,
+    -4*$size -5*$size 0 $light-color,
+    -3*$size -5*$size 0 $light-color,
+    -2*$size -5*$size 0 $light-color,
+    -1*$size -5*$size 0 $light-color,
+    0*$size -5*$size 0 $light-color,
+    1*$size -5*$size 0 $light-color,
+    2*$size -5*$size 0 $light-color,
+    3*$size -5*$size 0 $light-color,
+    4*$size -5*$size 0 $light-color,
+    -5*$size -4*$size 0 $light-color,
+    -4*$size -4*$size 0 $light-color,
+    -3*$size -4*$size 0 $light-color,
+    -2*$size -4*$size 0 $light-color,
+    -1*$size -4*$size 0 $light-color,
+    0*$size -4*$size 0 $light-color,
+    1*$size -4*$size 0 $light-color,
+    2*$size -4*$size 0 $light-color,
+    3*$size -4*$size 0 $light-color,
+    4*$size -4*$size 0 $light-color,
+    5*$size -4*$size 0 $light-color,
+    -5*$size -3*$size 0 $light-color,
+    -4*$size -3*$size 0 $light-color,
+    -3*$size -3*$size 0 $light-color,
+    -2*$size -3*$size 0 $light-color,
+    -1*$size -3*$size 0 $light-color,
+    0*$size -3*$size 0 $light-color,
+    1*$size -3*$size 0 $light-color,
+    2*$size -3*$size 0 $light-color,
+    3*$size -3*$size 0 $light-color,
+    4*$size -3*$size 0 $light-color,
+    5*$size -3*$size 0 $light-color,
+    -6*$size -2*$size 0 $light-color,
+    -5*$size -2*$size 0 $light-color,
+    -4*$size -2*$size 0 $light-color,
+    -3*$size -2*$size 0 $light-color,
+    -2*$size -2*$size 0 $light-color,
+    -1*$size -2*$size 0 $light-color,
+    0*$size -2*$size 0 $light-color,
+    1*$size -2*$size 0 $light-color,
+    2*$size -2*$size 0 $light-color,
+    3*$size -2*$size 0 $light-color,
+    4*$size -2*$size 0 $light-color,
+    5*$size -2*$size 0 $light-color,
+    6*$size -2*$size 0 $light-color,
+    -6*$size -1*$size 0 $light-color,
+    -5*$size -1*$size 0 $light-color,
+    -4*$size -1*$size 0 $light-color,
+    -3*$size -1*$size 0 $light-color,
+    -2*$size -1*$size 0 $light-color,
+    -1*$size -1*$size 0 $light-color,
+    0*$size -1*$size 0 $light-color,
+    1*$size -1*$size 0 $light-color,
+    2*$size -1*$size 0 $light-color,
+    3*$size -1*$size 0 $light-color,
+    4*$size -1*$size 0 $light-color,
+    5*$size -1*$size 0 $light-color,
+    6*$size -1*$size 0 $light-color,
+    -6*$size 0*$size 0 $light-color,
+    -5*$size 0*$size 0 $light-color,
+    -4*$size 0*$size 0 $light-color,
+    -3*$size 0*$size 0 $light-color,
+    3*$size 0*$size 0 $light-color,
+    4*$size 0*$size 0 $light-color,
+    5*$size 0*$size 0 $light-color,
+    6*$size 0*$size 0 $light-color,
+    -3*$size 1*$size 0 $light-color,
+    -4*$size 1*$size 0 $light-color,
+    -5*$size 1*$size 0 $light-color,
+    3*$size 1*$size 0 $light-color,
+    4*$size 1*$size 0 $light-color,
+    5*$size 1*$size 0 $light-color,
+    -3*$size 2*$size 0 $light-color,
+    -4*$size 2*$size 0 $light-color,
+    -5*$size 2*$size 0 $light-color,
+    3*$size 2*$size 0 $light-color,
+    4*$size 2*$size 0 $light-color,
+    5*$size 2*$size 0 $light-color,
+    3*$size 3*$size 0 $light-color,
+    4*$size 3*$size 0 $light-color,
+    3*$size 4*$size 0 $light-color,
+    3*$size 5*$size 0 $light-color,
+    -3*$size 2*$size 0 $light-color,
+    -4*$size 2*$size 0 $light-color,
+    -5*$size 2*$size 0 $light-color,
+    -3*$size 3*$size 0 $light-color,
+    -4*$size 3*$size 0 $light-color,
+    -3*$size 4*$size 0 $light-color,
+    -3*$size 5*$size 0 $light-color;
+
+$light-bg-active:
+    -1*$size 1*$size 0 $active-wick-color,
+    1*$size 1*$size 0 $active-wick-color,
+    0 2*$size 0 $active-wick-color,
+    0 3*$size 0 $active-wick-color,
+    0 4*$size 0 $active-light-color,
+    0 5*$size 0 $active-light-color,
+    0 6*$size 0 rgb(247,209,94),
+    0 7*$size 0 rgb(247,209,94),
+    -2*$size 0*$size 0 $active-wick-color,
+    -2*$size 2*$size 0 $active-wick-color,
+    -2*$size 3*$size 0 $active-light-color,
+    -2*$size 4*$size 0 $active-light-color,
+    -2*$size 5*$size 0 $active-light-color,
+    -2*$size 6*$size 0 rgb(247,209,94),
+    -2*$size 7*$size 0 rgb(247,209,94),
+    2*$size 0*$size 0 $active-wick-color,
+    2*$size 2*$size 0 $active-wick-color,
+    2*$size 3*$size 0 $active-light-color,
+    2*$size 4*$size 0 $active-light-color,
+    2*$size 5*$size 0 $active-light-color,
+    2*$size 6*$size 0 rgb(247,209,94),
+    2*$size 7*$size 0 rgb(247,209,94),
+    -2*$size -6*$size 0 $active-light-color,
+    -1*$size -6*$size 0 $active-light-color,
+    0*$size -6*$size 0 $active-light-color,
+    1*$size -6*$size 0 $active-light-color,
+    2*$size -6*$size 0 $active-light-color,
+    -4*$size -5*$size 0 $active-light-color,
+    -3*$size -5*$size 0 $active-light-color,
+    -2*$size -5*$size 0 $active-light-color,
+    -1*$size -5*$size 0 $active-light-color,
+    0*$size -5*$size 0 $active-light-color,
+    1*$size -5*$size 0 $active-light-color,
+    2*$size -5*$size 0 $active-light-color,
+    3*$size -5*$size 0 $active-light-color,
+    4*$size -5*$size 0 $active-light-color,
+    -5*$size -4*$size 0 $active-light-color,
+    -4*$size -4*$size 0 white,
+    -3*$size -4*$size 0 white,
+    -2*$size -4*$size 0 $active-light-color,
+    -1*$size -4*$size 0 $active-light-color,
+    0*$size -4*$size 0 $active-light-color,
+    1*$size -4*$size 0 $active-light-color,
+    2*$size -4*$size 0 $active-light-color,
+    3*$size -4*$size 0 $active-light-color,
+    4*$size -4*$size 0 $active-light-color,
+    5*$size -4*$size 0 $active-light-color,
+    -5*$size -3*$size 0 $active-light-color,
+    -4*$size -3*$size 0 white,
+    -3*$size -3*$size 0 white,
+    -2*$size -3*$size 0 $active-light-color,
+    -1*$size -3*$size 0 $active-light-color,
+    0*$size -3*$size 0 white,
+    1*$size -3*$size 0 $active-light-color,
+    2*$size -3*$size 0 $active-light-color,
+    3*$size -3*$size 0 $active-light-color,
+    4*$size -3*$size 0 $active-light-color,
+    5*$size -3*$size 0 $active-light-color,
+    -6*$size -2*$size 0 $active-light-color,
+    -5*$size -2*$size 0 $active-light-color,
+    -4*$size -2*$size 0 $active-light-color,
+    -3*$size -2*$size 0 $active-light-color,
+    -2*$size -2*$size 0 $active-light-color,
+    -1*$size -2*$size 0 $active-light-color,
+    0*$size -2*$size 0 $active-light-color,
+    1*$size -2*$size 0 $active-light-color,
+    2*$size -2*$size 0 $active-light-color,
+    3*$size -2*$size 0 $active-light-color,
+    4*$size -2*$size 0 $active-light-color,
+    5*$size -2*$size 0 $active-light-color,
+    6*$size -2*$size 0 $active-light-color,
+    -6*$size -1*$size 0 $active-light-color,
+    -5*$size -1*$size 0 $active-light-color,
+    -4*$size -1*$size 0 $active-light-color,
+    -3*$size -1*$size 0 $active-light-color,
+    -2*$size -1*$size 0 $active-wick-color,
+    -1*$size -1*$size 0 $active-wick-color,
+    0*$size -1*$size 0 $active-light-color,
+    1*$size -1*$size 0 $active-wick-color,
+    2*$size -1*$size 0 $active-wick-color,
+    3*$size -1*$size 0 $active-light-color,
+    4*$size -1*$size 0 $active-light-color,
+    5*$size -1*$size 0 $active-light-color,
+    6*$size -1*$size 0 $active-light-color,
+    -6*$size 0*$size 0 $active-light-color,
+    -5*$size 0*$size 0 $active-light-color,
+    -4*$size 0*$size 0 $active-light-color,
+    -3*$size 0*$size 0 $active-wick-color,
+    3*$size 0*$size 0 $active-wick-color,
+    4*$size 0*$size 0 $active-light-color,
+    5*$size 0*$size 0 $active-light-color,
+    6*$size 0*$size 0 $active-light-color,
+    -3*$size 1*$size 0 $active-wick-color,
+    -4*$size 1*$size 0 $active-light-color,
+    -5*$size 1*$size 0 $active-light-color,
+    3*$size 1*$size 0 $active-wick-color,
+    4*$size 1*$size 0 $active-light-color,
+    5*$size 1*$size 0 $active-light-color,
+    -3*$size 2*$size 0 $active-light-color,
+    -4*$size 2*$size 0 $active-light-color,
+    -5*$size 2*$size 0 $active-light-color,
+    3*$size 2*$size 0 $active-light-color,
+    4*$size 2*$size 0 $active-light-color,
+    5*$size 2*$size 0 $active-light-color,
+    3*$size 3*$size 0 $active-light-color,
+    4*$size 3*$size 0 $active-light-color,
+    3*$size 4*$size 0 $active-light-color,
+    3*$size 5*$size 0 $active-light-color,
+    -3*$size 2*$size 0 $active-light-color,
+    -4*$size 2*$size 0 $active-light-color,
+    -5*$size 2*$size 0 $active-light-color,
+    -3*$size 3*$size 0 $active-light-color,
+    -4*$size 3*$size 0 $active-light-color,
+    -3*$size 4*$size 0 $active-light-color,
+    -3*$size 5*$size 0 $active-light-color;
+$line-active:
+  -3*$size 6*$size 0 rgb(247,209,94),
+  -3*$size 7*$size 0 $line-color,
+  -4*$size 4*$size 0 $active-light-color,
+  -4*$size 5*$size 0 rgb(247,209,94),
+  -5*$size 3*$size 0 $active-light-color,
+  -6*$size 2*$size 0 $active-light-color,
+  -6*$size 1*$size 0 $active-light-color,
+  -7*$size 0*$size 0 $active-light-color,
+  -7*$size -1*$size 0 $active-light-color,
+  -7*$size -2*$size 0 $active-light-color,
+  -6*$size -3*$size 0 $active-light-color,
+  -6*$size -4*$size 0 $active-light-color,
+  -5*$size -5*$size 0 $active-light-color,
+  -4*$size -6*$size 0 $active-light-color,
+  -3*$size -6*$size 0 $active-light-color,
+  -2*$size -7*$size 0 $active-light-color,
+  -1*$size -7*$size 0 $active-light-color,
+
+  3*$size 6*$size 0 rgb(247,209,94),
+  3*$size 7*$size 0 $line-color,
+  4*$size 4*$size 0 $active-light-color,
+  4*$size 5*$size 0 rgb(247,209,94),
+  5*$size 3*$size 0 $active-light-color,
+  6*$size 2*$size 0 $active-light-color,
+  6*$size 1*$size 0 $active-light-color,
+  7*$size 0*$size 0 $active-light-color,
+  7*$size -1*$size 0 $active-light-color,
+  7*$size -2*$size 0 $active-light-color,
+  6*$size -3*$size 0 $active-light-color,
+  6*$size -4*$size 0 $active-light-color,
+  5*$size -5*$size 0 $active-light-color,
+  4*$size -6*$size 0 $active-light-color,
+  3*$size -6*$size 0 $active-light-color,
+  2*$size -7*$size 0 $active-light-color,
+  1*$size -7*$size 0 $active-light-color,
+  
+  0*$size -7*$size 0 $active-light-color,
+
+  0*$size 8*$size 0 $line-color,
+  1*$size 8*$size 0 $line-color,
+  -1*$size 8*$size 0 $line-color,
+  2*$size 8*$size 0 $line-color,
+  -2*$size 8*$size 0 $line-color,
+  0*$size 10*$size 0 $line-color,
+  1*$size 10*$size 0 $line-color,
+  -1*$size 10*$size 0 $line-color,
+  2*$size 10*$size 0 $line-color,
+  -2*$size 10*$size 0 $line-color;
+$line:
+  -3*$size 6*$size 0 $line-color,
+  -3*$size 7*$size 0 $line-color,
+  -4*$size 4*$size 0 $line-color,
+  -4*$size 5*$size 0 $line-color,
+  -5*$size 3*$size 0 $line-color,
+  -6*$size 2*$size 0 $line-color,
+  -6*$size 1*$size 0 $line-color,
+  -7*$size 0*$size 0 $line-color,
+  -7*$size -1*$size 0 $line-color,
+  -7*$size -2*$size 0 $line-color,
+  -6*$size -3*$size 0 $line-color,
+  -6*$size -4*$size 0 $line-color,
+  -5*$size -5*$size 0 $line-color,
+  -4*$size -6*$size 0 $line-color,
+  -3*$size -6*$size 0 $line-color,
+  -2*$size -7*$size 0 $line-color,
+  -1*$size -7*$size 0 $line-color,
+
+  3*$size 6*$size 0 $line-color,
+  3*$size 7*$size 0 $line-color,
+  4*$size 4*$size 0 $line-color,
+  4*$size 5*$size 0 $line-color,
+  5*$size 3*$size 0 $line-color,
+  6*$size 2*$size 0 $line-color,
+  6*$size 1*$size 0 $line-color,
+  7*$size 0*$size 0 $line-color,
+  7*$size -1*$size 0 $line-color,
+  7*$size -2*$size 0 $line-color,
+  6*$size -3*$size 0 $line-color,
+  6*$size -4*$size 0 $line-color,
+  5*$size -5*$size 0 $line-color,
+  4*$size -6*$size 0 $line-color,
+  3*$size -6*$size 0 $line-color,
+  2*$size -7*$size 0 $line-color,
+  1*$size -7*$size 0 $line-color,
+  
+  0*$size -7*$size 0 $line-color,
+
+  0*$size 8*$size 0 $line-color,
+  1*$size 8*$size 0 $line-color,
+  -1*$size 8*$size 0 $line-color,
+  2*$size 8*$size 0 $line-color,
+  -2*$size 8*$size 0 $line-color,
+  0*$size 10*$size 0 $line-color,
+  1*$size 10*$size 0 $line-color,
+  -1*$size 10*$size 0 $line-color,
+  2*$size 10*$size 0 $line-color,
+  -2*$size 10*$size 0 $line-color;
+
+$wick-active:
+  -1*$size 0 0 rgb(248,203,58),
+  1*$size 0 0 rgb(248,203,58),
+  0 1*$size 0 rgb(248,203,58),
+  2*$size 1*$size 0 rgb(248,203,58),
+  -2*$size 1*$size 0 rgb(248,203,58),
+  -1*$size 2*$size 0 rgb(248,203,58),
+  -1*$size 3*$size 0 rgb(248,203,58),
+  -1*$size 4*$size 0 rgb(246,199,62),
+  -1*$size 5*$size 0 rgb(246,199,62),
+  -1*$size 6*$size 0 rgb(246,198,65),
+  -1*$size 7*$size 0 rgb(246,198,65),
+  1*$size 2*$size 0 rgb(248,203,58),
+  1*$size 3*$size 0 rgb(248,203,58),
+  1*$size 4*$size 0 rgb(246,199,62),
+  1*$size 5*$size 0 rgb(246,199,62),
+  1*$size 6*$size 0 rgb(246,198,65),
+  1*$size 7*$size 0 rgb(246,198,65);
+
+$wick:
+  -1*$size 0 0 $wick-color,
+  1*$size 0 0 $wick-color,
+  0 1*$size 0 $wick-color,
+  2*$size 1*$size 0 $wick-color,
+  -2*$size 1*$size 0 $wick-color,
+  -1*$size 2*$size 0 $wick-color,
+  -1*$size 3*$size 0 $wick-color,
+  -1*$size 4*$size 0 $wick-color,
+  -1*$size 5*$size 0 $wick-color,
+  -1*$size 6*$size 0 $wick-color,
+  -1*$size 7*$size 0 $wick-color,
+  1*$size 2*$size 0 $wick-color,
+  1*$size 3*$size 0 $wick-color,
+  1*$size 4*$size 0 $wick-color,
+  1*$size 5*$size 0 $wick-color,
+  1*$size 6*$size 0 $wick-color,
+  1*$size 7*$size 0 $wick-color;
+
+$light-bottom-active:
+  -2*$size 9*$size 0 white,
+  -1*$size 9*$size 0 white,
+  0*$size 9*$size 0 white,
+  1*$size 9*$size 0 white,
+  2*$size 9*$size 0 white,
+  -2*$size 11*$size 0 white,
+  -1*$size 11*$size 0 white,
+  0*$size 11*$size 0 white,
+  1*$size 11*$size 0 white,
+  2*$size 11*$size 0 white,
+  -3*$size 8*$size 0 white,
+  -3*$size 10*$size 0 white,
+  -3*$size 12*$size 0 white,
+  3*$size 8*$size 0 white,
+  3*$size 10*$size 0 white,
+  2*$size 13*$size 0 $active-bottom-color,
+  1*$size 14*$size 0 $active-bottom-color,
+  0*$size 14*$size 0 $active-bottom-color,
+  -1*$size 14*$size 0 $active-bottom-color;
+
+$light-bottom:
+  -2*$size 9*$size 0 $bottom-color,
+  -1*$size 9*$size 0 $bottom-color,
+  0*$size 9*$size 0 $bottom-color,
+  1*$size 9*$size 0 $bottom-color,
+  2*$size 9*$size 0 $bottom-color,
+  -2*$size 11*$size 0 $bottom-color,
+  -1*$size 11*$size 0 $bottom-color,
+  0*$size 11*$size 0 $bottom-color,
+  1*$size 11*$size 0 $bottom-color,
+  2*$size 11*$size 0 $bottom-color,
+  -3*$size 8*$size 0 $bottom-color,
+  -3*$size 10*$size 0 $bottom-color,
+  -3*$size 12*$size 0 $bottom-color,
+  3*$size 8*$size 0 $bottom-color,
+  3*$size 10*$size 0 $bottom-color,
+  2*$size 13*$size 0 $bottom-color,
+  1*$size 14*$size 0 $bottom-color,
+  0*$size 14*$size 0 $bottom-color,
+  -1*$size 14*$size 0 $bottom-color;
+
+
+$light-star:
+  
+  0*$size -10*$size 0 white,
+  0*$size -11*$size 0 $active-light-color,
+  0*$size -12*$size 0 $active-light-color,
+  0*$size -14*$size 0 $active-light-color,
+  
+  -5*$size -9*$size 0 white,
+  -6*$size -10*$size 0 $active-light-color,
+  -7*$size -11*$size 0 $active-light-color,
+  -8*$size -12*$size 0 $active-light-color,
+  
+  7*$size -8*$size 0 white,
+  8*$size -9*$size 0 $active-light-color,
+  9*$size -10*$size 0 $active-light-color,
+  10*$size -11*$size 0 $active-light-color,
+  
+  10*$size 2*$size 0 white,
+  11*$size 2*$size 0 $active-light-color,
+  12*$size 2*$size 0 $active-light-color,
+  13*$size 2*$size 0 $active-light-color,
+  15*$size 2*$size 0 $active-light-color,
+  
+  -11*$size 2*$size 0 white,
+  -12*$size 2*$size 0 $active-light-color,
+  -13*$size 2*$size 0 $active-light-color,
+  -15*$size 2*$size 0 $active-light-color,
+  
+  -9*$size 7*$size 0 white,
+  -10*$size 8*$size 0 white,
+  -11*$size 9*$size 0 $active-light-color,
+  -12*$size 10*$size 0 $active-light-color,
+  
+  9*$size 7*$size 0 white,
+  10*$size 8*$size 0 $active-light-color,
+  11*$size 9*$size 0 $active-light-color,
+  12*$size 10*$size 0 $active-light-color,
+  
+  -11*$size -3*$size 0 $active-light-color,
+  -18*$size 7*$size 0 $active-light-color,
+  8*$size 13*$size 0 $active-light-color,
+  4*$size -13*$size 0 $active-light-color,
+  
+  -13*$size -7*$size 0 $active-light-color,
+  -12*$size -8*$size 0 $active-light-color,
+  -13*$size -8*$size 0 $active-light-color,
+  -14*$size -8*$size 0 $active-light-color,
+  -13*$size -9*$size 0 $active-light-color,
+  
+  13*$size -3*$size 0 $active-light-color,
+  12*$size -4*$size 0 $active-light-color,
+  13*$size -4*$size 0 $active-light-color,
+  14*$size -4*$size 0 $active-light-color,
+  13*$size -5*$size 0 $active-light-color,
+  
+  18*$size 10*$size 0 $active-light-color,
+  17*$size 11*$size 0 $active-light-color,
+  18*$size 11*$size 0 $active-light-color,
+  19*$size 11*$size 0 $active-light-color,
+  18*$size 12*$size 0 $active-light-color,
+  
+  -11*$size 15*$size 0 $active-light-color,
+  -10*$size 16*$size 0 $active-light-color,
+  -11*$size 16*$size 0 $active-light-color,
+  -12*$size 16*$size 0 $active-light-color,
+  -11*$size 17*$size 0 $active-light-color;
+
+html,body{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+.main{
+  width:100%;
+  height:100%;
+  background-color:rgb(28,27,32);
+  position: relative;
+  .point{
+    position: absolute;
+    cursor: pointer;
+    width:#{15*$size};
+    height:#{25*$size};
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index:99;
+    opacity: 0;
+    -webkit-tap-highlight-color: transparent; 
+    -webkit-appearance: none;
+    &:checked + .light{
+      animation:none;
+      background-color:$active-wick-color;
+      box-shadow:
+        $line-active,
+        $wick-active,
+        $light-bg-active,
+        $light-bottom-active,
+        $light-star;
+    }
+  }
+}
+.light{
+  width:$size;
+  height:$size;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-$size*2);
+  background-color:$light-color;
+  box-shadow:
+    $line,
+    $wick,
+    $light-bg,
+    $light-bottom;
+   animation:flash 2s linear infinite;
+  &.active{
+    background-color:$active-wick-color;
+     box-shadow:
+    $line-active,
+    $light-bg-active,
+    $wick-active,
+    $light-bottom-active;
+  }
+}
+
+@keyframes flash {
+  0%,48%,58%,78%,94%,100%{
+    background-color:$light-color;
+    box-shadow:
+      $line,
+      $wick,
+      $light-bg,
+      $light-bottom;
+  }
+  50%,80%{
+    background-color:$active-wick-color;
+     box-shadow:
+      $line-active,
+      $wick-active,
+      $light-bg-active,
+      $light-bottom-active;
+  }
+}
